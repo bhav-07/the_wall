@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1082640827390",
+    "project_id": "walltute",
+    "storage_bucket": "walltute.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082640827390:android:e1df159a86f896e4ea76af",
+        "android_client_info": {
+          "package_name": "com.example.the_wall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1082640827390-lv9up6ntgsgn9k8f8l1n3smhlk9ssvbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOZAizEvg-WtRg1yqXRl6g0jbeSXemPao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1082640827390-lv9up6ntgsgn9k8f8l1n3smhlk9ssvbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
