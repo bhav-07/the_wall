@@ -1,8 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:the_wall/components/drawer.dart';
 import 'package:the_wall/components/text_field.dart';
 import 'package:the_wall/components/wall_post.dart';
+import 'package:the_wall/pages/profile_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,10 +16,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   //user info
   final currentUser = FirebaseAuth.instance.currentUser!;
-
   //text controller for post a message
   final textController = TextEditingController();
-
   //post the message
   void postMessage() {
     //only post if there is something is there in the textfield
@@ -35,9 +35,14 @@ class _HomePageState extends State<HomePage> {
       textController.clear();
     });
   }
-
   void signout() {
     FirebaseAuth.instance.signOut();
+  }
+  //navigate to profile page
+  void goToProfilePage() {
+    Navigator.pop(context); 
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const ProfilePage()));
   }
 
   @override
@@ -48,10 +53,10 @@ class _HomePageState extends State<HomePage> {
         title: const Text("The Wall"),
         backgroundColor: Colors.grey[900],
         elevation: 0,
-        actions: [
-          //sign out button
-          IconButton(onPressed: signout, icon: const Icon(Icons.logout))
-        ],
+      ),
+      drawer: MyDrawer(
+        onProfileTap: goToProfilePage,
+        onSignOutTap: signout,
       ),
       body: Center(
         child: Column(
