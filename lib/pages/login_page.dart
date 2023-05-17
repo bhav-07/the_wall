@@ -66,11 +66,11 @@ class _LoginPageState extends State<LoginPage> {
                     size: 100,
                   ),
                   const SizedBox(
-                    height: 25,
+                    height: 30,
                   ),
                   Text(
-                    "Welcome back!",
-                    style: TextStyle(fontSize: 20, color: Colors.grey[700]),
+                    "Welcome back 😄",
+                    style: TextStyle(fontSize: 30, color: Colors.grey[700]),
                   ),
                   const SizedBox(height: 25),
                   MyTextField(
