@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:the_wall/components/drawer.dart';
 import 'package:the_wall/components/text_field.dart';
 import 'package:the_wall/components/wall_post.dart';
@@ -51,9 +52,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        title: const Text("The Wall"),
+        title: Text("The Wall",style: GoogleFonts.pacifico(fontSize: 25),),
         backgroundColor: Colors.grey[900],
         elevation: 0,
+        centerTitle: true,
+        
       ),
       drawer: MyDrawer(
         onProfileTap: goToProfilePage,
@@ -108,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                           obscureText: false)),
                   IconButton(
                       onPressed: postMessage,
-                      icon: const Icon(Icons.arrow_circle_up))
+                      icon: const Icon(Icons.arrow_upward_rounded))
                 ],
               ),
             ),

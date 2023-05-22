@@ -63,7 +63,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
         backgroundColor: Colors.grey[300],
         appBar: AppBar(
-          title: const Text("PROFILE PAGE"),
+          title: const Text("Profile Page"),
           backgroundColor: Colors.grey[900],
         ),
         body: StreamBuilder<DocumentSnapshot>(
@@ -100,7 +100,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 //bio
                 MyTextBox(
                   text: userData['bio'],
-                  sectionName: 'bio',
+                  sectionName: 'Bio',
                   onPressed: () => editField('bio'),
                 ),
                 const SizedBox(height: 50),

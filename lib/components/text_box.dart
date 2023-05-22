@@ -32,7 +32,7 @@ class MyTextBox extends StatelessWidget {
               //edit button
               IconButton(
                 onPressed: onPressed,
-                icon: const Icon(Icons.settings),
+                icon: const Icon(Icons.edit),
                 color: Colors.grey[500],
               )
             ],
