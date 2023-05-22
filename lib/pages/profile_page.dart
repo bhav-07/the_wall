@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:the_wall/components/text_box.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -61,10 +62,9 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[300],
+        backgroundColor:Theme.of(context).colorScheme.background,
         appBar: AppBar(
-          title: const Text("Profile Page"),
-          backgroundColor: Colors.grey[900],
+          title: Text("Profile Page", style: GoogleFonts.pacifico(fontSize: 22),),
         ),
         body: StreamBuilder<DocumentSnapshot>(
           stream: FirebaseFirestore.instance

@@ -15,7 +15,7 @@ class Comment extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.grey[300],
+        color: Theme.of(context).colorScheme.secondary,
         borderRadius: BorderRadius.circular(4),
       ),
       margin: const EdgeInsets.only(bottom: 5),
@@ -26,9 +26,9 @@ class Comment extends StatelessWidget {
           Text(text),
           Row(
             children: [
-              Text(author, style: TextStyle(color: Colors.grey[600])),
-              Text(" • ", style: TextStyle(color: Colors.grey[600])),
-              Text(time, style: TextStyle(color: Colors.grey[600]))
+              Text(author, style: TextStyle(color: Colors.grey[500])),
+              Text(" • ", style: TextStyle(color: Colors.grey[500])),
+              Text(time, style: TextStyle(color: Colors.grey[500]))
             ],
           ),
         ],

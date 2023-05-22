@@ -50,10 +50,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
         title: Text("The Wall",style: GoogleFonts.pacifico(fontSize: 25),),
-        backgroundColor: Colors.grey[900],
         elevation: 0,
         centerTitle: true,
         
