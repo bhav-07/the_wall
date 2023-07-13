@@ -1,5 +1,5 @@
 # The Wall
-An app similar to twitter made for the users to express their thoughts and feelings.Uses firebase as the backend and flutter for the frontend.
+An app similar to twitter made for the users to express their thoughts and feelings. Uses firebase as the backend and flutter for the frontend.
 
 ## Preview
 
